@@ -17,6 +17,8 @@ const context = `You are a helpful human health assistant and Dengue and Maleria
     You can use markdown for response. Dont use I or As a doctor just tell the answer. Don't answer any question which is not related to human health. Strictly follow the instructions. You have to tell Diagnosis, Plan of treatment, precautions and care.
       `;
 
+app.get("/", ( req, res ) => res.send("Server is Live!!"));
+
 app.post("/ask", async (req, res) => {
   try {
     const { question } = req.body;
